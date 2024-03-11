@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>لحظه شمار ماه رمضان در شهرستان اوز</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<!-- 
+<html>
+  <head>
+    <title>My HTML Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+      body {
+        background-image: url("background.jpg");
+        background-size: cover;
+        font-family: 'Lalezar', cursive;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        font-family: 'Lalezar', cursive;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Lalezar', cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my HTML page!</h1>
 
-	
-	 -->
+    <button><a href="page2.html">Button 1</a></button>
+    <button><a href="page2.html">Button 2</a></button>
+    <button><a href="page2.html">Button 3</a></button>
+    <button><a href="page2.html">Button 4</a></button>
+    <button><a href="page2.html">Button 5</a></button>
 
-<div class="new-year-card">
-  <div class="remainder">
-     <h1>لحظه شمار تقریبی ماه مبارک رمضان در اوز</h1>
-    <div class="time">
-      <div><div class="day"><span>0</span></div>روز</div>
-      <div><div class="hour"><span>0</span></div>ساعت</div>
-      <div><div class="min"><span>0</span></div>دقیقه</div>
-      <div><div class="sec"><span>0</span></div>ثانیه</div>
-    </div>
+    <p>
+      <img
+        src="ad.png"
+        alt="Advertisement"
+        width="300"
+        height="250"
+        onclick="openNewPage()"
+      />
+    </p>
 
-    
-    
-  </div>
-  <div class="happy">
-    <h1>رمضان مبارک!</h1>
-  </div>
-</div>
-
-<script src="https://unpkg.com/jalali-moment/dist/jalali-moment.browser.js"></script>
-	<script type="text/javascript" src="js.js"></script>
-</body>
+    <script>
+      function openNewPage() {
+        window.open("page2.html", "_blank");
+      }
+    </script>
+  </body>
 </html>
