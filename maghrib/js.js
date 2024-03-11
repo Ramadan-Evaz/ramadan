@@ -1,5 +1,5 @@
-const nowruz = moment('1403/01/01', 'jYYYY/jMM/jDD'); 
-nowruz.hour(0); nowruz.minute(54); nowruz.second(28);
+const nowruz = moment('1402/12/21', 'jYYYY/jMM/jDD'); 
+nowruz.hour(18); nowruz.minute(02); nowruz.second(30);
 
 const MIN  = 60;
 const HOUR = MIN  * 60;
