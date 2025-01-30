@@ -60,17 +60,15 @@ body {
   max-width: 600px;
   margin: 1rem auto;
 }
-.sponsor-ad {
-  display: block;
-  text-align: center;  /* بنر را وسط‌چین کند */
-  margin: 1rem 0;      /* فاصله‌ی عمودی از سایر بخش‌ها */
-}
-.sponsor-ad img {
-  max-width: 100%;     /* بنر در دستگاه‌های کوچک، واکنش‌گرا شود */
-  height: auto;
-  border-radius: 6px;  /* لبه‌های گرد (دلخواه) */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* سایه‌ی سبک */
-}
+   .sponsor-banner {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            max-width: 250px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
 
 /* کارت عمومی */
 .card {
