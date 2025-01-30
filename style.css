@@ -1,0 +1,162 @@
+/* ریست پایه */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* بدنه با پس‌زمینه */
+body {
+  direction: rtl;
+  font-family: sans-serif;
+  /* برای تناسب با همه‌ی موبایل‌ها:
+     cover = پر کردن زمینه
+     center = متمرکز
+     fixed = ثابت ماندن تصویر در اسکرول
+  */
+  background: url("https://i.ibb.co/pJbkz4k/ramadan-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px; /* فضای کافی برای دکمه شناور */
+}
+
+/* هدر */
+.app-header {
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 1rem;
+}
+.header-inner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.app-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+.header-inner h1 {
+  font-size: 1.4rem;
+  color: #ffd700; /* طلایی */
+}
+.header-subtitle {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* محتوای اصلی */
+.main-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+/* کارت عمومی */
+.card {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.card h2 {
+  text-align: center;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* کارت تاریخ امروز */
+.date-card p {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* کارت اوقات شرعی */
+.times-card .prayer-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px dotted #aaa;
+}
+
+/* شمارش معکوس */
+.countdown-card .countdown-display,
+.ramadan-start-card .countdown-display {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+/* کارت اذکار و نکات */
+.azkar-card p,
+.fact-card p {
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* دکمه هوش مصنوعی شناور */
+.ai-button {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem; /* یا right: 1rem برای گوشه‌ی دیگر */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #bfa31d; /* طیف طلایی */
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+.ai-button:hover {
+  background-color: #e5c419;
+}
+.ai-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* فوتر */
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* واکنش‌گرایی ساده برای موبایل */
+@media (max-width: 600px) {
+  .app-header h1 {
+    font-size: 1.2rem;
+  }
+  .header-subtitle {
+    font-size: 0.8rem;
+  }
+}
