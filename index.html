@@ -2,23 +2,24 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, 
+                 maximum-scale=1.0, user-scalable=no">
   <title>اوقات شرعی رمضان - شهر اوز</title>
-
-  <!-- لینک به فایل manifest -->
+  
+  <!-- فایل Manifest (اختیاری) -->
   <link rel="manifest" href="manifest.json">
 
-  <!-- لینک به فایل CSS و سایر متاها -->
+  <!-- لینک به فایل CSS اصلی -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <!-- هدر با لوگوی اپلیکیشن -->
   <header class="app-header">
     <div class="header-inner">
       <!-- لوگوی اپ (ابعاد دلخواه) -->
-      <img src="logo512-512.png" alt="App Logo" class="app-logo">
+      <img src="https://via.placeholder.com/60x60?text=App+Logo" alt="App Logo" class="app-logo">
       <h1>اوقات شرعی رمضان - اوز</h1>
     </div>
     <p class="header-subtitle">ویژه رمضان همراه با اذکار، نکات و هوش مصنوعی</p>
@@ -26,8 +27,7 @@
 
   <!-- بخش اصلی -->
   <main class="main-container">
-<img src="noonvalqalam.jpeg" alt="بنر حامی" class="sponsor-banner">
-    
+
     <!-- شمارش معکوس تا شروع رمضان -->
     <section class="card ramadan-start-card">
       <h2>شمارش معکوس تا رمضان (۱۱ اسفند ۱۴۰۳)</h2>
@@ -69,7 +69,6 @@
       </div>
     </section>
 
-
     <!-- شمارش معکوس اذان بعدی -->
     <section class="card countdown-card">
       <h2 id="next-prayer-title">شمارش معکوس تا اذان بعدی</h2>
@@ -87,6 +86,7 @@
       <h2>نکته رمضانی امروز</h2>
       <p id="today-fact">---</p>
     </section>
+
   </main>
 
   <!-- دکمه شناور هوش مصنوعی (با لوگو) -->
@@ -95,12 +95,19 @@
     <span>هوش مصنوعی</span>
   </button>
 
+  <!-- بنر تبلیغاتی (اسپانسر) -->
+  <!-- مسیر فایل تصویر را با بنر دلخواه خود تنظیم کنید و درصورت نیاز لینک بگذارید. -->
+ <a href="https://example-sponsor.com" target="_blank">
+  <img src="sponsor.jpg" alt="بنر حامی" class="sponsor-banner">
+</a>
+
+
   <!-- فوتر -->
   <footer class="app-footer">
     <p>© 2025 - Evazan, شهر اوز</p>
   </footer>
 
-  <!-- اسکریپت -->
+  <!-- اسکریپت اصلی -->
   <script src="script.js"></script>
 </body>
 </html>
