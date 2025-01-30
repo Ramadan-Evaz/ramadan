@@ -10,7 +10,7 @@ body {
   direction: rtl;
   font-family: sans-serif;
   /* تصویر زمینه‌ی نمونه؛ می‌توانید آدرس عکسی که مدنظر دارید جایگزین کنید */
-  background: url("https://i.ibb.co/pJbkz4k/ramadan-bg.jpg") no-repeat center center fixed;
+  background: url("ramadan.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   min-height: 100vh;
