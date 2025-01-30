@@ -9,14 +9,9 @@
 body {
   direction: rtl;
   font-family: sans-serif;
-  /* برای تناسب با همه‌ی موبایل‌ها:
-     cover = پر کردن زمینه
-     center = متمرکز
-     fixed = ثابت ماندن تصویر در اسکرول
-  */
+  /* تصویر زمینه‌ی نمونه؛ می‌توانید آدرس عکسی که مدنظر دارید جایگزین کنید */
   background: url("https://i.ibb.co/pJbkz4k/ramadan-bg.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
   color: #fff;
   min-height: 100vh;
   position: relative;
@@ -60,15 +55,6 @@ body {
   max-width: 600px;
   margin: 1rem auto;
 }
-   .sponsor-banner {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            max-width: 250px;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        }
 
 /* کارت عمومی */
 .card {
@@ -80,9 +66,19 @@ body {
 }
 .card h2 {
   text-align: center;
-  color: #ffd700;
+  color: #ffd700; 
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+}
+
+/* شمارش معکوس رمضان و اذان */
+.ramadan-start-card .countdown-display,
+.countdown-card .countdown-display {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.4rem;
 }
 
 /* کارت تاریخ امروز */
@@ -102,17 +98,7 @@ body {
   border-bottom: 1px dotted #aaa;
 }
 
-/* شمارش معکوس */
-.countdown-card .countdown-display,
-.ramadan-start-card .countdown-display {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  margin-top: 0.4rem;
-}
-
-/* کارت اذکار و نکات */
+/* اذکار و نکات */
 .azkar-card p,
 .fact-card p {
   text-align: center;
@@ -146,6 +132,18 @@ body {
 .ai-icon {
   width: 24px;
   height: 24px;
+}
+
+/* بنر تبلیغاتی (اسپانسر) */
+.sponsor-banner {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  max-width: 250px;   /* حداکثر عرض بنر */
+  width: 80%;         /* در موبایل کمی کوچک‌تر */
+  border-radius: 10px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 998;       /* پشت دکمه‌ی هوش مصنوعی */
 }
 
 /* فوتر */
