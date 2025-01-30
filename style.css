@@ -8,7 +8,7 @@
 /* بدنه با پس‌زمینه */
 body {
   direction: rtl;
-  font-family: sans-serif;
+  font-family: 'Vazir', sans-serif;
   /* تصویر زمینه‌ی نمونه؛ می‌توانید آدرس عکسی که مدنظر دارید جایگزین کنید */
   background: url("ramadan.jpg") no-repeat center center fixed;
   background-size: cover;
